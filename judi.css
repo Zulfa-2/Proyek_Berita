@@ -1,0 +1,131 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Menu Navigasi */
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Search dan Tombol Masuk */
+.search-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.search-login input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    height: 35px;
+}
+
+.btn-masuk {
+    background: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-masuk:hover {
+    color: #007bff;
+}
+
+/* Konten Utama */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+main .date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+main img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+main p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
