@@ -1,0 +1,201 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #1d3af2;
+    font-weight: 600;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-login input {
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #1d3af2;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    color: #1d3af2;
+}
+
+/* Konten Utama */
+main {
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.berita-detail h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.berita-detail .penulis {
+    font-size: 14px;
+    color: #444;
+}
+
+.berita-detail .date {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.berita-detail img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.berita-detail p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Berita Terkait */
+.berita-terkait {
+    margin-top: 40px;
+}
+
+.berita-terkait h3 {
+    margin-bottom: 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+.berita-terkait h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #1d3af2;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.berita-terkait ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.berita-terkait ul li {
+    margin-bottom: 10px;
+}
+
+.berita-terkait ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.berita-terkait ul li a:hover {
+    color: #1d3af2;
+}
+
+/* Berita YouTube */
+.berita-youtube {
+    margin-top: 40px;
+}
+
+.berita-youtube h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.berita-youtube h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #1d3af2;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.youtube-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.youtube-container img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.youtube-container img:hover {
+    transform: scale(1.05);
+}
